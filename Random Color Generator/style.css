@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Roboto+Mono:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s;
+}
+
+.box {
+    width: 250px;
+    height: 225px;
+    border-radius: 10px;
+    background: #e1e5f2;
+    color: #343D46;
+    box-shadow: 0 0 16px 0 #414756;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.box .color-code {
+    border: 0.25rem ridge #343d46;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.box .button {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #e1e5f2;
+    font-size: 0.90rem;
+    background: #343D46;
+    /* code beneath be used so u cant select the text on the buttton */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
