@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Work/Study Timer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Work/Study Timer</h1>
+        <div class="timer">
+            <div class="normal-timer">
+                <h2 class="timer-title">Normal Timer</h2>
+                <div class="timer-display">
+                    <span class="hours">00</span>:
+                    <span class="minutes">00</span>:
+                    <span class="seconds">00</span>
+                </div>
+                <div class="timer-buttons">
+                    <button class="start-button" onclick="startTimer()">Start</button>
+                    <button class="stop-button" onclick="stopTimer()">Stop</button>
+                    <button class="reset-button" onclick="resetTimer()">Reset</button>
+                </div>
+            </div>
+            <div class="custom-timer">
+                <h2 class="timer-title">Customizable Timer</h2>
+                <div class="timer-display">
+                    <input type="number" class="hours-input" placeholder="00" min="0" max="24">:
+                    <input type="number" class="minutes-input" placeholder="00" min="0" max="60">:
+                    <input type="number" class="seconds-input" placeholder="00" min="0" max="60">
+                </div>
+                <div class="timer-buttons">
+                    <button class="start-button" onclick="startCustomTimer()">Start</button>
+                    <button class="stop-button" onclick="stopCustomTimer()">Stop</button>
+                    <button class="reset-button" onclick="resetCustomTimer()">Reset</button>
+                </div>
+            </div>
+            <div class="pomodoro-timer">
+                <h2 class="timer-title">Pomodoro Timer</h2>
+                <div class="timer-display">
+                    <span class="pomodoro-minutes">25</span>:
+                    <span class="pomodoro-seconds">00</span>
+                </div>
+                <div class="timer-buttons">
+                    <button class="start-button" onclick="startPomodoroTimer()">Start</button>
+                    <button class="stop-button" onclick="stopPomodoroTimer()">Stop</button>
+                    <button class="reset-button" onclick="resetPomodoroTimer()">Reset</button>
+                </div>
+            </div>
+            <div class="reminder">
+                <h2 class="reminder-title">Reminder</h2>
+                <p class="reminder-text">Stand up and drink water every 30 minutes</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
